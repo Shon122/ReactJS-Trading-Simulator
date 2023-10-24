@@ -375,7 +375,7 @@ const Game = ({
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/stock-data?symbol=${inputValue}&timeframe=${timeVal}`
+        `https://trading-simulator1.onrender.com/stock-data?symbol=${inputValue}&timeframe=${timeVal}`
       );
 
       const stockData = response.data;

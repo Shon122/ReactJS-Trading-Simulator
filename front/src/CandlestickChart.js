@@ -34,7 +34,7 @@ const CandlestickChart = ({ data, width, height, endGame }) => {
       type: "candlestick",
       height: height,
       zoom: {
-        enabled: true,
+        enabled: false,
       },
       background: "#3b3b3b", // Set the background color to black
     },
