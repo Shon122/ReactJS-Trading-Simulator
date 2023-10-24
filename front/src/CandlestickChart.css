@@ -1,0 +1,33 @@
+.candlestick-chart .apexcharts-canvas {
+  position: relative;
+}
+
+.chart-style .apexcharts-canvas {
+  border-radius: 10px; /* Adjust the value to match the outer border radius */
+  overflow: hidden;
+}
+/* Optionally, you can also style the chart itself */
+
+.pointer {
+  position: absolute;
+  background-color: whitesmoke;
+  opacity: 100%;
+  color: white;
+  padding: 2px;
+  border-radius: 2px;
+  white-space: nowrap;
+  width: 1620px; /* Adjust the width of the vertical line as needed */
+  height: 2px; /* Make the vertical line span the full height of the screen */
+}
+
+.pointer2 {
+  position: absolute;
+  background-color: whitesmoke;
+  opacity: 100%;
+  color: white;
+  padding: 2px;
+  border-radius: 2px;
+  white-space: nowrap;
+  width: 5px; /* Adjust the width of the vertical line as needed */
+  height: 25px; /* Make the vertical line span the full height of the screen */
+}

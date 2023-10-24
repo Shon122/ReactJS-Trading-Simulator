@@ -1,0 +1,43 @@
+.toggle-button {
+  height: 80px;
+  width: 156px;
+}
+
+.toggle-button .overlap-group {
+  border-radius: 40px;
+  height: 35px;
+  left: 45px;
+  position: relative;
+  top: 22px;
+  width: 66px;
+}
+
+.toggle-button .ellipse {
+  background-color: #ffffff;
+  border-radius: 13.5px;
+  box-shadow: 0px 0px 6px #00000033, inset 0px 0px 10px #00000026;
+  height: 27px;
+  position: relative;
+  top: 4px;
+  width: 27px;
+}
+
+.toggle-button .off {
+  background-color: #5b5b5b;
+}
+
+.toggle-button .on {
+  background: linear-gradient(
+    180deg,
+    rgb(34, 209, 238) 0%,
+    rgb(61, 90, 241) 100%
+  );
+}
+
+.toggle-button .overlap-group.off .ellipse {
+  left: 3px;
+}
+
+.toggle-button .overlap-group.on .ellipse {
+  left: 36px;
+}
