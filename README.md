@@ -1,8 +1,8 @@
 # ReactJS-Trading-Simulator
-- Trading Simulator using ReactJS + Node + Express + FinancialModelingPrep API.
+- Built using ReactJS + Node + Express + FinancialModelingPrep API.
 - Based on real historical prices for multiple timeframes and over 100 stocks/coins.
-- Option to toggle on/off the Crypto/Forex/Stocks categories. 
-- All-time best score will be saved after the user has logged off.
+- Option to toggle Crypto/Forex/Stocks categories on and off. 
+- All-time best score and current score will be saved after the user has logged off.
 
 <a href="https://tradingsimulator.netlify.app"><strong>Visit The Website »</strong></a>
    
