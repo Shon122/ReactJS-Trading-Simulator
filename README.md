@@ -1,7 +1,5 @@
-## ReactJS-Trading-Simulator
-# Trading Simulator using ReactJS + Node + Express + FinancialModelingPrep API
-<div></div>
-<!-- Use a div to style the link -->
+# ReactJS-Trading-Simulator
+## Trading Simulator using ReactJS + Node + Express + FinancialModelingPrep API
 
    <a href="https://tradingsimulator.netlify.app"><strong>Visit The Website »</strong></a>
 
