@@ -175,19 +175,6 @@ const Game = ({
 
   const [correctAnswer, setCorrectAnswer] = useState("");
 
-  // useEffect(() => {
-  //   const currentRow = localStorage.getItem("currentRow");
-  //   const mostRow = localStorage.getItem("mostRow");
-
-  //   if (currentRow) {
-  //     setWinsRow(currentRow);
-  //   }
-
-  //   if (mostRow) {
-  //     setMostWinsRow(mostRow);
-  //   }
-  // }, []);
-
   useEffect(() => {
     generateGame();
   }, []);
@@ -200,20 +187,6 @@ const Game = ({
       console.log("empty stock123");
     }
   }, [currentStock]);
-
-  // useEffect(() => {
-  //   if (winsRow != -999) {
-  //     console.log("enterd winsrow:" + winsRow);
-  //     localStorage.setItem("currentRow", winsRow);
-
-  //     updateCurrentWins(winsRow);
-  //     if (winsRow > mostWinsRow) {
-  //       setMostWinsRow(winsRow);
-  //       updateMostWins(winsRow);
-  //       localStorage.setItem("mostRow", winsRow);
-  //     }
-  //   }
-  // }, [winsRow]);
 
   const startGame = () => {
     if (currentStock.length > 500) {
@@ -375,7 +348,8 @@ const Game = ({
 
     try {
       const response = await axios.get(
-        `https://trading-simulator1.onrender.com/stock-data?symbol=${inputValue}&timeframe=${timeVal}`
+         `https://trading-simulator1.onrender.com/stock-data?symbol=${inputValue}&timeframe=${timeVal}`
+        // `http://localhost:5000/stock-data?symbol=${inputValue}&timeframe=${timeVal}`
       );
 
       const stockData = response.data;
@@ -412,40 +386,6 @@ const Game = ({
   };
 
   return (
-    // <>
-    //   <div>
-    //     <div>
-    //       {midGame && (
-    //         <CandlestickChart
-    //           data={dataShown}
-    //           width="1000"
-    //           height="500"
-    //           endGame={gameEnded}
-    //         />
-    //       )}
-    //       {gameEnded ? (
-    //         <p>
-    //           {currentSymbol}, {currentTimeFrame}
-    //         </p>
-    //       ) : (
-    //         <p>???</p>
-    //       )}
-
-    //       {/* <h1>Correct guesses in a row: {winsRow}</h1> */}
-    //       {/* <h1>Most correct guesses in a row: {mostWinsRow}</h1> */}
-    //       {!gameEnded && midGame && (
-    //         <button onClick={() => checkGuess("up")}>up</button>
-    //       )}
-    //       {!gameEnded && midGame && (
-    //         <button onClick={() => checkGuess("down")}>down</button>
-    //       )}
-    //       <div>
-    //         {gameEnded && <button onClick={() => generateGame()}>Next</button>}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </>
-
     <>
       <div className="div-3">
         <div className="div-wrapper">

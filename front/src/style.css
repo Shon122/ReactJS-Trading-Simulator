@@ -1,5 +1,6 @@
 body {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 .frame {
   background-color: #242424;
@@ -13,9 +14,9 @@ body {
 }
 .frame .div {
   background-color: #242424;
-  height: 950px;
+  height: 1500px;
   position: relative;
-  width: 1920px;
+  width: 100%;
 }
 .chart-wrapper {
   left: 70px;

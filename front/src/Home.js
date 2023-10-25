@@ -50,39 +50,6 @@ const Home = () => {
     console.log("forexOn " + forexOn);
   }, [forexOn]);
 
-  // useEffect(() => {
-  //   setGamemode("stocks");
-  // }, []);
-  // useEffect(() => {
-  //   const fetchDataFromLocalStorage = async () => {
-  //     if (updateWins != "-5") {
-  //       console.log("entered");
-
-  //       // Retrieve values from localStorage
-  //       const currentRow = localStorage.getItem("currentRow");
-  //       const mostRow = localStorage.getItem("mostRow");
-  //       console.log(currentRow);
-  //       console.log(mostRow);
-  //       // Check if the values exist in localStorage before attempting to parse them
-  //       if (currentRow != null && currentRow != "NaN") {
-  //         console.log(currentRow);
-  //         if (Number.isInteger(parseInt(currentRow))) {
-  //           setCurrentWins(currentRow);
-  //         }
-  //       }
-
-  //       if (mostRow != null && mostRow != "NaN") {
-  //         console.log(mostRow);
-  //         if (Number.isInteger(parseInt(mostRow))) {
-  //           setMostWins(mostRow);
-  //         }
-  //       }
-  //     }
-  //   };
-  //   fetchDataFromLocalStorage();
-  //   setUpdateWins("-5");
-  // }, [updateWins]);
-
   useEffect(() => {
     if (currentWins != "-999") {
       localStorage.setItem("currentRow", currentWins);
@@ -123,15 +90,6 @@ const Home = () => {
   ///////////////////////////////////
   //funcs...
 
-  const changeGamemode = (gamemode) => {
-    console.log("current wins: " + currentWins);
-    console.log("most wins: " + mostWins);
-    setGamemode(gamemode);
-  };
-
-  const moveToPage = (pageName) => {
-    navigate("/" + pageName);
-  };
 
   const handleClick = (modeChanged) => {
     if (modeChanged === "stocks") {
@@ -155,43 +113,7 @@ const Home = () => {
   };
   ///////////////////////////////////
   return (
-    // <div>
-    //   <Navbar></Navbar>
-    //   <div>
-    //     <button onClick={() => changeGamemode("stocks")}>Stocks</button>
-    //     <button onClick={() => changeGamemode("crypto")}>Crypto</button>
-    //     <button onClick={() => changeGamemode("forex")}>Forex</button>
-    //     <h1>Gamemode: {gamemode}</h1>
-    //     <h1>Most correct guesses in a row: {mostWins}</h1>
-    //     <h1>current correct guesses in a row: {currentWins}</h1>
-
-    //     {!gameStarted ? (
-    //       // This part will be displayed when gameStarted is true
-    //       <button
-    //         onClick={() => {
-    //           // Handle starting the game here
-    //           setGameStarted(true);
-    //           // moveToPage("game");
-    //         }}
-    //       >
-    //         Start Game
-    //       </button>
-    //     ) : (
-    //       <></>
-    //     )}
-    //     <div>
-    //       {gameStarted && (
-    //         <Game
-    //           gamemodeValue={gamemode}
-    //           currentWins={currentWins}
-    //           mostWins={mostWins}
-    //           updateWinsCurrent={setCurrentWins}
-    //           updateWinsMost={setMostWins}
-    //         />
-    //       )}
-    //     </div>
-    //   </div>
-    // </div>
+   
 
     <div className="frame">
       <div className="div">
@@ -307,21 +229,7 @@ const Home = () => {
         ) : (
           <></>
         )}
-        {/* 
-        <div class="overlap-61">
-          <div class="div-wrapper-21">
-            <div
-              onClick={() => {
-                // Handle starting the game here
-                setGameStarted(true);
-                // moveToPage("game");
-              }}
-              class="text-wrapper-81"
-            >
-              Start Game
-            </div>
-          </div>
-        </div> */}
+  
 
         <div>
           {gameStarted && (
@@ -335,7 +243,7 @@ const Home = () => {
           )}
         </div>
 
-        {/*  <Game></Game> */}
+     
       </div>
     </div>
   );
