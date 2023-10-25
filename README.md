@@ -3,7 +3,7 @@ Trading Simulator using ReactJS + Node + Express + FinancialModelingPrep API
 <div></div>
 <!-- Use a div to style the link -->
 <div style="text-decoration: none;">
-  <h1 href="https://tradingsimulator.netlify.app" style="text-decoration: none; color: #1a0dab;">Visit Website</h1>
+  <a href="https://tradingsimulator.netlify.app" style="text-decoration: none; color: #1a0dab; font-size: 36px;">Visit Website</a>
 </div>
 
 
