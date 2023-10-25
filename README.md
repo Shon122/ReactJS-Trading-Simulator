@@ -1,5 +1,5 @@
-# ReactJS-Trading-Simulator
-Trading Simulator using ReactJS + Node + Express + FinancialModelingPrep API
+## ReactJS-Trading-Simulator
+# Trading Simulator using ReactJS + Node + Express + FinancialModelingPrep API
 <div></div>
 <!-- Use a div to style the link -->
 
